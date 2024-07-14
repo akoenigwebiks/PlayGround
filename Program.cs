@@ -12,7 +12,7 @@ namespace PlayGround
             string connString = config["ConnectionString"]!;
             DBContext dbc = new DBContext(connString);
             Demo demo = new Demo(dbc);
-            demo.GetAllEmployees();
+            demo.GetEmployeesBornBetweenYears();
         }
     }
 }
